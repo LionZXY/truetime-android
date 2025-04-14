@@ -31,4 +31,11 @@ class SntpResult(val ntpResult: LongArray) {
   private fun responseTime(): Long {
     return ntpResult[SntpImpl.RESPONSE_INDEX_RESPONSE_TIME]
   }
+
+  override fun toString(): String {
+    return "SntpResult(roundTripDelay=${roundTripDelay()}, " +
+        "clockOffset=${clockOffset()}, " +
+        "timeSinceBoot=${timeSinceBoot()}, " +
+        "responseTime=${responseTime()})"
+  }
 }

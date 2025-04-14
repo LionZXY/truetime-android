@@ -18,6 +18,7 @@ private constructor(
     val strictNtpMode: Boolean,
 ) {
 
+
   class Builder {
 
     private var connectionTimeout: Duration = 30_000.milliseconds
@@ -129,5 +130,18 @@ private constructor(
             filterIpv6Addresses,
             strictNtpMode,
         )
+  }
+
+  override fun toString(): String {
+    return "TrueTimeParameters(connectionTimeout=$connectionTimeout, " +
+        "ntpHostPool=$ntpHostPool, " +
+        "retryCountAgainstSingleIp=$retryCountAgainstSingleIp, " +
+        "rootDelayMax=$rootDelayMax, " +
+        "rootDispersionMax=$rootDispersionMax, " +
+        "serverResponseDelayMax=$serverResponseDelayMax, " +
+        "syncInterval=$syncInterval, " +
+        "returnSafelyWhenUninitialized=$returnSafelyWhenUninitialized, " +
+        "filterIpv6Addresses=$filterIpv6Addresses, " +
+        "strictNtpMode=$strictNtpMode)"
   }
 }
