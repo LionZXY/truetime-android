@@ -12,7 +12,7 @@ android {
 
   defaultConfig {
     applicationId = "com.instacart.truetime"
-    minSdk = libs.versions.minSdk.get().toInt()
+    minSdk = 26
     targetSdk = libs.versions.targetSdk.get().toInt()
 
     versionCode = libs.versions.trueTimeVersionCode.get().toInt()
@@ -26,8 +26,8 @@ android {
   buildFeatures { viewBinding = true }
 
   compileOptions {
-    sourceCompatibility = JavaVersion.VERSION_17
-    targetCompatibility = JavaVersion.VERSION_17
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
   }
 }
 
