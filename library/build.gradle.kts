@@ -8,7 +8,7 @@ plugins {
   alias(libs.plugins.kotlin.android)
   alias(libs.plugins.maven.publish)
   id("maven-publish")
-  id("signing")
+  id("signing") // TODO Remove it
 }
 
 android {

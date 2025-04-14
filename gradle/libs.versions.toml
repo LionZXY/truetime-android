@@ -4,7 +4,7 @@ minSdk = "21"
 targetSdk = "35"
 
 trueTimeVersionCode = "12"
-trueTime = "4.0.0"
+trueTime = "4.0.1"
 trueTimeRx = "3.5"
 
 mavenPublishGradlePlugin = "0.31.0"
