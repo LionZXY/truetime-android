@@ -175,5 +175,7 @@ hs_err_pid*
 # Cache of project
 .gradletasknamecache
 
+.kotlin
+
 secrets.env
 private.pgp
