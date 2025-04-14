@@ -18,7 +18,6 @@ private constructor(
     val strictNtpMode: Boolean,
 ) {
 
-
   class Builder {
 
     private var connectionTimeout: Duration = 30_000.milliseconds
