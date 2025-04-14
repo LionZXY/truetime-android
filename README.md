@@ -42,22 +42,16 @@ dependency. The concept hasn't changed but the above video is still a good expla
 
 ## Installation
 
-We use [JitPack](https://jitpack.io) to host the library.
+Unlike the original repository, this fork is published in Maven Central
 
-[![](https://jitpack.io/v/instacart/truetime-android.svg)](https://jitpack.io/#instacart/truetime-android)
+[![Maven Central](https://img.shields.io/maven-central/v/uk.kulikov/truetime)](https://central.sonatype.com/artifact/uk.kulikov/truetime)
 
 Add this to your application's `build.gradle` file:
 
 ```groovy
-repositories {
-    maven {
-        url "https://jitpack.io"
-    }
-}
-
 dependencies {
     // ...
-    implementation 'com.github.instacart:truetime-android:<release-version>'
+    implementation 'uk.kulikov:truetime:<release-version>'
 }
 ```
 
