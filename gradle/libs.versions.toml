@@ -7,6 +7,7 @@ trueTimeVersionCode = "12"
 trueTime = "4.0.0"
 trueTimeRx = "3.5"
 
+mavenPublishGradlePlugin = "0.31.0"
 androidGradlePlugin = "8.9.1"
 androidxAppCompat = "1.7.0"
 androidxLifecycle = "2.8.7"
@@ -24,6 +25,7 @@ android-library = { id = "com.android.library", version.ref = "androidGradlePlug
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 spotless = { id = "com.diffplug.spotless", version.ref = "spotless" }
+maven-publish = { id = "com.vanniktech.maven.publish", version.ref = "mavenPublishGradlePlugin" }
 
 [libraries]
 
